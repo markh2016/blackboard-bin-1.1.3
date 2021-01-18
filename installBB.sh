@@ -12,7 +12,7 @@ OSNAME=$(lsb_release -ic)
 installpath=~/.BlackBoard
 
 
-declare -a logpaths=(" models/ " "symbols/ " "parts/ " "datasheets/ " "simulators/ ")
+declare -a logpaths=("symbols/ " "parts/ " "datasheets/ " "simulators/ " "models/ ")
 
 
 
@@ -63,9 +63,20 @@ for i in "${logpaths[@]}"
 do 
 echo
 echo "copying $i to ~/.BlackBoard"
-cp -R $i ~/.BlackBoard
+cp -R $i ~/.BlackBoard 
 
 done 
+
+# have to do this twice  Why I dont know  but seems to solve the problem 
+for i in "${logpaths[@]}"
+do 
+echo
+echo "copying $i to ~/.BlackBoard"
+cp -R $i ~/.BlackBoard 
+
+done 
+
+
 
 
 # modify start up file 
