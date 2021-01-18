@@ -22,11 +22,17 @@ I also had to change the  Linux_Start.sh bash file  so that this would work
 Please also not this adds a desktop entry as well 
 
 
-Details and code  of the installBB.sh are below   Enjoy
+Details and code  of the installBB.sh are below   Enjoy !! 
+
+
+MD Harrington 
+
+https://www.facebook.com/mark.harrington.142892/
+
 
 #!/bin/bash
 
-# MD Harrington https://www.facebook.com/mark.harrington.142892/
+
 
 # global  variables  
 
@@ -113,7 +119,7 @@ cp BBDesigner.desktop /home/$USER/Desktop/BBDesigner.desktop
 rm BBDesigner.desktop
 
 }
-# end function 
+
 
 if [[ $OSNAME =~ .*openSUSE.* ]]; then
 echo "Script is correct for $OSNAME ver 15.1 ver 15.2." 
