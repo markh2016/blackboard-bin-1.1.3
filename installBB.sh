@@ -12,7 +12,7 @@ OSNAME=$(lsb_release -ic)
 
 
 
-declare -a logpaths=("models/" "symbols/" "parts/" "datasheets/" "simulators/")
+declare -a logpaths=(" models/ ~/.BlackBoard" "symbols/ ~/.BlackBoard " "parts/ ~/.BlackBoard" "datasheets/ ~/.BlackBoard" "simulators/ ~/.BlackBoard")
 
 
 
@@ -62,8 +62,8 @@ echo "Creating folders forblackboard and copying files"
 for i in "${logpaths[@]}"
 do 
 echo
-echo "copying $i to ~./BlackBoard"
-cp -R "$i" ~/.BlackBoard
+echo "copying $i to ~/.BlackBoard"
+cp -R "$i" 
 
 done 
 
