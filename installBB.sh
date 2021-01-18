@@ -12,7 +12,7 @@ OSNAME=$(lsb_release -ic)
 
 
 
-declare -a logpaths=("models" "symbols" "parts" "datasheets" "simulators")
+declare -a logpaths=("models/" "symbols/" "parts/" "datasheets/" "simulators/")
 
 
 
