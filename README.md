@@ -1,6 +1,11 @@
 # blackboard-bin-1.1.3
 by matthias.pueski@sick.de (Original  writer of this  software ) 
 
+Please note if you wish to install this all  by hand then follow 
+README_INSTALL.md
+
+If  not then  please take note of the following below 
+
 
 I have copied this across to  here  so that other can still use this  with other Linux distros 
 
