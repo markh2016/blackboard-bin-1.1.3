@@ -9,10 +9,10 @@ OS=$(uname -s)
 VER=$(uname -r)
 OSNAME=$(lsb_release -ic)
 
+installpath=~/.BlackBoard
 
 
-
-declare -a logpaths=(" models/ ~/.BlackBoard" "symbols/ ~/.BlackBoard " "parts/ ~/.BlackBoard" "datasheets/ ~/.BlackBoard" "simulators/ ~/.BlackBoard")
+declare -a logpaths=(" models/ " "symbols/ " "parts/ " "datasheets/ " "simulators/ ")
 
 
 
@@ -63,7 +63,7 @@ for i in "${logpaths[@]}"
 do 
 echo
 echo "copying $i to ~/.BlackBoard"
-cp -R "$i" 
+cp -R $i ~/.BlackBoard
 
 done 
 
